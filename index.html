@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Panda Task - Calm Productivity</title>
+    <meta name="title" content="Panda Task - Calm Productivity" />
+    <meta name="description" content="A calm, minimalist task manager for focused productivity. Organize your tasks, set goals, and stay productive with a peaceful interface." />
+    
+    <!-- OPTIMIZED: Enhanced viewport for full-screen PWA -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#50C878" />
+    <meta name="background-color" content="#0a0a0a" />
+    
+    <!-- OPTIMIZED: Enhanced PWA Meta Tags for No Header -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Panda Task" />
+    <meta name="msapplication-TileColor" content="#0a0a0a" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    <!-- Prevent address bar on mobile -->
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="48x48" href="icons/android-launchericon-48-48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/android-launchericon-96-96.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icons/android-launchericon-192-192.png" />
+    <link rel="shortcut icon" href="icons/android-launchericon-192-192.png" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Panda Task - Calm Productivity" />
+    <meta property="og:description" content="A calm, minimalist task manager for focused productivity" />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Panda Task - Calm Productivity" />
+    <meta property="twitter:description" content="A calm, minimalist task manager for focused productivity" />
+    <meta property="twitter:image" content="/og-image.png" />
+    
+    <!-- OPTIMIZED: Performance Enhancements -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    
+    <!-- ORIGINAL: Load from GitHub -->
+    <script type="module" crossorigin src="https://ahmedzaky369.github.io/pt12c/assets/index-BH11ZMbH.js"></script>
+    <link rel="modulepreload" crossorigin href="https://ahmedzaky369.github.io/pt12c/assets/react-vendor-DtX1tuCI.js">
+    <link rel="modulepreload" crossorigin href="https://ahmedzaky369.github.io/pt12c/assets/framer-motion-DaBn-BHP.js">
+    <link rel="modulepreload" crossorigin href="https://ahmedzaky369.github.io/pt12c/assets/lucide-C8STxHrL.js">
+    <link rel="stylesheet" crossorigin href="https://ahmedzaky369.github.io/pt12c/assets/index-BeSvUlRh.css">
+    
+    <!-- OPTIMIZED: Service Worker for Performance -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW registration failed'));
+        });
+      }
+      
+      // OPTIMIZED: Prevent zoom on mobile
+      document.addEventListener('gesturestart', e => e.preventDefault());
+      document.addEventListener('gesturechange', e => e.preventDefault());
+      document.addEventListener('gestureend', e => e.preventDefault());
+      
+      // OPTIMIZED: Hide address bar on mobile
+      window.addEventListener('load', () => {
+        setTimeout(() => window.scrollTo(0, 1), 0);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  </body>
+</html>
